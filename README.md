@@ -52,6 +52,8 @@ The deck is made up of three main parts:
 The names of these decks could be better...
 
 ### The **Kashtira**s:
+> Show me that Extra, show me that extra...
+
 **Main Deck:**
 - 2x [*Kashtira Unicorn*](https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17769)
 - 1x [*Kashtira Fenrir*](https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17768)
@@ -63,6 +65,8 @@ Honestly, I would play more **Kashtira**s if I could, but *Kashtira Unicorn* and
 - *Kashtiratheosis* is used since the main purpose of the **Kashtira**s is to bait out hand traps. Due to how strong *Kashtira Birth* is, *Kashtira Unicorn* is a common target for hand traps when it activates its effect to add a **Kashtira** spell. However, this means that most people will not use a hand trap until *Kashtira Unicorn* activates its effect, meaning that a *Kashtira Unicorn* that is not using its effect is unable to bait hand traps. This is the reason why *Kashtiratheosis* is in the deck, as an additional search target for *Kashtira Unicorn* in the case where you draw *Kashtira Birth*. Since your hand is obscured from your opponent, they are likely to believe that a *Kashtira Unicorn* attempting to use its effect is trying to add *Kashtira Birth* and will use hand traps to stop it, allowing *Kashtira Unicorn* to bait out hand traps when you already have *Kashtira Birth* in hand. Even in the case where they do not hand trap *Kashtira Unicorn*, *Kashtiratheosis* can still be used at the end of a combo to summon *Kashtira Fenrir* as an additional source of disruption if *Kashtira Unicorn* is still on field.
 
 ### The **Bystial**s:
+> I'm gonna banish a light and a dark...
+
 **Main Deck:**
 - 1x [*Bystial Magnamhut*](https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17762)
 - 3x [*Bystial Saronir*](https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=17763)
@@ -76,6 +80,8 @@ These guys are the main reason I wanted to pick up this deck. **Fiendsmith** is 
 Unfortunately, using **Bystial**s on your opponent's turn means that there's a body on your side of the field, turning off the ability for the **Kashtira**s to special summon themselves. This is just something I have come to terms with and is an unfortunate part of the deck. The most you can do is hope that your opponent clears your **Bystial**/s for you and turns on your **Kashtira**s.
 
 ### The **Fiendsmith**s:
+> Any two monsters...
+> 
 **Main Deck:**
 - 2x [*Fiendsmith Engraver*](https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=20196)
 - 1x [*Fiendsmith's Tract*](https://www.db.yugioh-card.com/yugiohdb/card_search.action?ope=2&cid=20240)
