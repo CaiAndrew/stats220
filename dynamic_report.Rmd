@@ -1,0 +1,77 @@
+---
+title: My dynamic report
+output: html_fragment
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, message=FALSE, warning=FALSE, error=FALSE)
+library(tidyverse)
+```
+
+```{css}
+
+```
+
+## What's the Deal with YouTube Sponsors?
+
+```{r}
+logged_data <- read.csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vTAI3f0c1YqJ1fks5WrrpgwsJ6cR4fU4FqEI6uXsr5hdhTRWUOzgAgd3q3lD7Aua9P9LrXjnZIUIGE1/pub?output=csv")
+
+latest_data <- logged_data %>%
+  rename(video_category = 2,
+         video_length = 3,
+         subscriber_count = 4,
+         upload_date = 5,
+         sponsor_name = 6)
+
+latest_data <- latest_data %>%
+  mutate(video_length = as.numeric(hms(video_length)))
+
+
+total_no <- length(latest_data$Timestamp)
+
+max_length <- max(latest_data$video_length)
+
+min_length <- min(latest_data$video_length)
+
+sponsor_count <- latest_data %>%
+  count(sponsor_name, sort = TRUE)
+
+category_count <- latest_data %>%
+  count(video_category, sort = TRUE)
+
+```
+
+Sponsors, how do they work?
+We'll be counting up sponsor appearances in YouTube videos and comparing them to the category of said video to see if we can find any patterns. 
+
+```{r}
+ggplot(data = latest_data) +
+  geom_bar(aes(x = video_category, 
+               fill = sponsor_name)) +
+  labs(title = "Sponsorship Density by Video Category",
+       x = "Video Category",
+       y = "Sponsor Count",
+       fill = "Sponsor Name") +
+  scale_x_discrete(guide = guide_axis(angle = 90))
+```
+
+Out of `r total_no` sponsored videos between `r min_length` and `r max_length` seconds long, the most common sponsor is *`r sponsor_count$sponsor_name[1]`*.
+
+<br>
+<br>
+<br>
+
+```{r}
+ggplot(data = latest_data) +
+  geom_bar(aes(x = sponsor_name, 
+               fill = video_category)) +
+  labs(title = "Video Category by Sponsorship Density",
+       x = "Sponsor Name",
+       y = "Video Count",
+       fill = "Video Category") +
+  scale_x_discrete(guide = guide_axis(angle = 90))
+
+```
+
+In terms of videos with sponsors, videos in the *`r category_count$video_category[1]`* category tended to have a larger number of sponsors compared to the others.
